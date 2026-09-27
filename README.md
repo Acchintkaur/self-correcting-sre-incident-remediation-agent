@@ -6,7 +6,8 @@ Unlike traditional naive RAG architectures that suffer from context hallucinatio
 
 ---
 ## Architecture and State Machine
-![alt text](image.png)
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/898b9c47-201c-4933-be74-80392f09df7e" />
+
 
 ## Core Capabilities
 - Two-Tier Model Routing: High-throughput lightweight models (gpt-4o-mini) for pre-generation chunk filtering and intent checks, with deep reasoning models (gpt-4o) reserved for synthesis and hallucination audits.
@@ -22,9 +23,9 @@ The engine was evaluated using an automated LLM-as-a-Judge scoring harness acros
 
 | Metric | Score | Target | Description |
 | :---- | :---: | :---: | :---- |
-| Answer Relevance | 0.840 | \> 0.80 | Semantic alignment, completeness, and directness in resolving the incident query (+10% post prompt tuning). |
-| Faithfulness | 0.800 | \> 0.80 | Fraction of claims and CLI commands strictly supported by the source runbooks. |
-| Context Precision | 0.800 | \> 0.80 | Proportion of relevant runbook passages ranked at the top of retrieved context. |
+| Answer Relevance | 0.840 | \>= 0.80 | Semantic alignment, completeness, and directness in resolving the incident query (+10% post prompt tuning). |
+| Faithfulness | 0.800 | \>= 0.80 | Fraction of claims and CLI commands strictly supported by the source runbooks. |
+| Context Precision | 0.800 | \>= 0.80 | Proportion of relevant runbook passages ranked at the top of retrieved context. |
 | Self-Correction Loops | 9 Resolved | N/A | Total autonomous retry loops triggered and resolved without human intervention. |
 
 ---
