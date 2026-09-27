@@ -1,0 +1,31 @@
+# Environment & Secrets
+.env
+*.env
+
+# Python Virtual Environments & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Qdrant Local Storage & Locks
+qdrant_storage/
+*.lock
+
+# Raw Data (optional to omit large git clones)
+runbooks/
+docs.zip
+temp_docs/
+
+# IDE / OS specific
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Evaluation Exports (keep benchmark_results.csv if you want it visible on GitHub)
+*.tar
